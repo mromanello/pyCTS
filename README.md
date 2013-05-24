@@ -6,8 +6,8 @@ pyCTS is an initial pythonic implementation of the CTS API. The support is curre
 
 The current implementation is basically a port to python of [this CTS Java implementation](https://bitbucket.org/neelsmith/cts) by Neel Smith.
 
-## LICENSE
-The source code in gcollection is licensed under the GNU General Public
+### License
+The source code in this repository is licensed under the GNU General Public
 License version 3 (http://www.gnu.org/licenses/gpl.html).
 
 (c) 2013 Matteo Romanello

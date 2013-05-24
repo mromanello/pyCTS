@@ -1,30 +1,13 @@
-## Notes about topology
+## pyCTS
 
-These are the values that topology can take:
+Author: Matteo Romanello, <matteo.romanello@gmail.com>
 
-	enum Topology {
-	     EQUALS, PRECEDES, FOLLOWS, CONTAINS, IS_CONTAINED_BY, PRECEDES_AND_OVERLAPS, OVERLAPS_AND_FOLLOWS
-	}
-	
-And these care the possible cases for comparison of URNs:
+pyCTS is an initial pythonic implementation of the CTS API. The support is currently limited to the `CTS_URN` class which allows one to perform basic operation on CTS URNs, i.e. the kind of URNs defined and used by the [CTS protocol](http://www.homermultitext.org/hmt-doc/cite/texts/ctsoverview.html) and the [CITE architecture](http://www.homermultitext.org/hmt-doc/cite/). 
 
-	Topology urnTopology(CtsUrn urn1, CtsUrn urn2) {
-	        // 3 cases to consider:
+The current implementation is basically a port to python of [this CTS Java implementation](https://bitbucket.org/neelsmith/cts) by Neel Smith.
 
-	        if ((!urn1.isRange()) &&  (!urn2.isRange())) {
-	            return twoPointTopology(urn1, urn2)
-            
-	        } else if ((!urn1.isRange()) && (urn2.isRange())) {
-	            return pointToRangeTopology(urn1, urn2)
+## LICENSE
+The source code in gcollection is licensed under the GNU General Public
+License version 3 (http://www.gnu.org/licenses/gpl.html).
 
-
-	        } else if ((urn1.isRange()) && (!urn2.isRange())) {
-	            return rangeToPointTopology(urn1, urn2)
-
-	        } else if ((urn1.isRange()) && (urn2.isRange())) {
-	            return rangeToRangeTopology(urn1,urn2)
-
-	        } else {
-	            return null
-	        }
-	    }
+(c) 2013 Matteo Romanello

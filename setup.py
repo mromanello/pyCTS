@@ -9,7 +9,7 @@ def read(fname):
 setup(name='pyCTS',
 	author='Matteo Romanello',
 	author_email='matteo.romanello@gmail.com',
-	url='https://github.com/mromanello/CTS_dev/',
+	url='https://github.com/mromanello/pyCTS/',
     version=VERSION,
     packages=find_packages(),
     include_package_data=True,

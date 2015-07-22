@@ -1,5 +1,7 @@
 # coding: utf-8
 
+__version__='0.1.1'
+
 class BadCtsUrnSyntax(Exception):
 	"""docstring for BadCtsUrnSyntax"""
 	pass
@@ -231,6 +233,9 @@ class CTS_URN(object):
 		docstring for __str__
 		"""
 		return unicode(self).encode('utf-8')
+
+	def __repr__(self):
+		return self._as_string
 	
 if __name__ == "__main__":
 	import doctest

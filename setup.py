@@ -1,7 +1,9 @@
 import os
 from setuptools import setup, find_packages
+import pyCTS
 
-VERSION = "0.1.0"
+VERSION = pyCTS.__version__
+
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
@@ -13,7 +15,7 @@ setup(name='pyCTS',
     version=VERSION,
     packages=find_packages(),
     include_package_data=True,
-    long_description=read('README.txt'),
+    long_description=read('README.md'),
     #install_requires=['partitioner','CRFPP'],
     zip_safe=False,
 )

@@ -39,7 +39,7 @@ class CTS_URN(object):
 		
 		try:
 			self._initialize_URN(inp_string)
-		except Exception, e:
+		except Exception as e:
 			raise e
 	
 	@property
@@ -87,7 +87,8 @@ class CTS_URN(object):
 		components = urn_string.split(":")
 		try:
 			assert components[0]=="urn" and components[1]=="cts"
-		except Exception, e:
+		except 
+		as e:
 			raise BadCtsUrnSyntax("Bad syntax for pseudo-URN: \"%s\""%urn_string)
 		
 		size = len(components)

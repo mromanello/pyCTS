@@ -87,8 +87,7 @@ class CTS_URN(object):
 		components = urn_string.split(":")
 		try:
 			assert components[0]=="urn" and components[1]=="cts"
-		except 
-		as e:
+		except Exception as e:
 			raise BadCtsUrnSyntax("Bad syntax for pseudo-URN: \"%s\""%urn_string)
 		
 		size = len(components)

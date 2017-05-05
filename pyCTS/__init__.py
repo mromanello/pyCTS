@@ -1,6 +1,8 @@
-# coding: utf-8
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# author: Matteo Romanello, matteo.romanello@gmail.com
 
-__version__='0.1.1'
+from __future__ import print_function
 
 class BadCtsUrnSyntax(Exception):
 	"""docstring for BadCtsUrnSyntax"""
@@ -17,7 +19,7 @@ class CTS_URN(object):
 	>>> urn = CTS_URN(urn_string)
 	
 	>>> urn_string = u"urn:cts:greekLit:tlg0008.tlg001:173f#δημήτριος"
-	>>> print CTS_URN(urn_string)
+	>>> print(CTS_URN(urn_string))
 	urn:cts:greekLit:tlg0008.tlg001:173f#δημήτριος
 	
 	"""

@@ -4,5 +4,5 @@
 
 from collections import namedtuple
 VersionSpec = namedtuple('VersionSpec', ['major', 'minor', 'revision'])
-version = VersionSpec(0, 1, 2)
+version = VersionSpec(0, 1, 3)
 str_version = '.'.join(map(str, version))

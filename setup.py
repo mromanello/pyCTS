@@ -4,15 +4,17 @@ from setuptools import setup, find_packages
 NAME = "pyCTS"
 try:
     execfile('{0}/__version__.py'.format(NAME))
-except NameError as e:
+except NameError:
     exec(open('{0}/__version__.py'.format(NAME)).read())
 VERSION = str_version
+
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 
-setup(name=NAME,
+setup(
+    name=NAME,
     author='Matteo Romanello',
     author_email='matteo.romanello@gmail.com',
     license='GPL v3',

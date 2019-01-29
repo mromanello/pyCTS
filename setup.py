@@ -22,11 +22,12 @@ setup(
     classifiers=[
         'Intended Audience :: Science/Research',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
         'Operating System :: POSIX'
     ],
     version=VERSION,
     packages=find_packages(),
     include_package_data=True,
-    long_description=read('README.md'),
+    long_description="pyCTS is a minimal Python implementation of the CTS URN class as defined by the Canonical Text Services protocol.",
     zip_safe=False,
 )
